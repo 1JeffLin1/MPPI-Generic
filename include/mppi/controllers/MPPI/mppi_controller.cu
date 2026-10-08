@@ -35,7 +35,6 @@ VanillaMPPI::VanillaMPPIController(DYN_T* model, COST_T* cost, FB_T* fb_controll
 {
   // Allocate CUDA memory for the controller
   allocateCUDAMemory();
-
   // // Copy the noise std_dev to the device
   // this->copyControlStdDevToDevice();
   chooseAppropriateKernel();
